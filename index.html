@@ -1,0 +1,138 @@
+<!--Enzo Tinard-->
+<!--CST-120 Bill Hughes-->
+<!--12/11/2023-->
+<!--This is my own work, all outside sources I used will be linked next to the code-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap Component -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+
+    <!-- Add jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+    </script>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js">
+    </script>
+
+    <!-- Add your existing meta tags, title, and custom stylesheet/script -->
+    <title>Enzo Tinard</title>
+    <link rel="stylesheet" href="./CSS/style.css" type="text/css">
+    <script src="./JS/script.js"></script>
+    
+    <!-- https://getbootstrap.com/docs/4.0/components/forms/ -->
+    <!-- For the form i used for messages -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #352A6A">
+        <a class="navbar-brand" href="#">7</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only"></span></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Experience.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Interests.html">Interests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Education.html">Education</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contact
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" data-target="github">GitHub</a>
+                        <a class="dropdown-item" data-target="linkedin">LinkedIn</a>
+                        <!-- Adding a bootstrap component near the email tab to let users know this is the best way to contact me -->
+                        <a class="dropdown-item" data-target="email">Email <span
+                                class="glyphicon glyphicon-envelope"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="title" align="center">
+        <h1>
+            Hi, I'm Enzo.
+        </h1>
+    </div>
+    <img src="../Milestone 7/images/car3.jpg">
+        <div id="aboutMe" class="content">
+            <p>
+                About me
+                <br>
+                Hello! my name is Enzo Tinard and this is my sample Welcome page for my first Milestone in
+                CST-120.
+                I will be using this outline to create a small resume based webpage.
+                Currently I am 20 years old and a Junior in software development at Grand Canyon University.
+            </p>
+        </div>
+
+    <div class="underimg">
+        <div id="github" class="content">
+            <hr>
+            <p>
+                <a href="https://github.com/enzxt" target="_blank">Github</a>
+                <span class="badge bg-secondary">Projects</span></p>
+                
+        </div>
+        <div id="linkedin" class="content">
+            <hr>
+            <p>
+                <a href="https://www.linkedin.com/in/enzo-tinard-2a0b56261/" target="_blank">LinkedIn</a>
+                <span class="badge bg-secondary">Resume</span></p>
+        </div>
+        <div id="email" class="content">
+            <hr>
+            <p>
+                Email
+                <span class="badge bg-secondary">Contact Me</span> </p>
+        </div>
+    </div>
+
+    <!-- Add form for emails using bootstrap for milestone 7 requirements -->
+    <br>
+    <form action="https://postman-echo.com/post" method="post">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+          <button class="btn btn-primary" type="submit">Send</button>
+        </div>
+      </form>
+      <br>
+      <br>
+</body>
+
+</html>

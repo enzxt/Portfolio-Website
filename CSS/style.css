@@ -1,0 +1,167 @@
+/* Enzo Tinard
+CST 120 Milestone 7
+12/11/2023
+This is my own work */
+
+
+/* <!--Added a nice little animation class for the header. found on stackoverflow 
+https://stackoverflow.com/questions/19767069/letter-by-letter-text-appearance-animation-with-css-->
+
+<!--The class a is used for taking away the automatic coloring from links. found on stackoverflow:
+https://stackoverflow.com/questions/2204634/how-to-disable-automatic-links-coloring-without-selecting-a-color-->
+
+/* Button code was borrowed and modified from : https://www.joshwcomeau.com/animation/css-transitions/  */
+
+/* background code : https://www.w3schools.com/cssref/pr_background-position.php */
+
+/* Body font, color, size, border, background image*/
+
+/* https://css-tricks.com/adaptive-photo-layout-with-flexbox used for the interests page*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap'); 
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    background-image: url(https://tattoosandlipstick.files.wordpress.com/2012/07/black-light-background.png);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* This is for the hero banner */
+img {
+    padding-left: 5%;
+    width: 95%;
+}
+
+/* This is the github linkedin and email text */
+.underimg {
+    padding-left: 4%;
+}
+
+/* wrapping text, using margins and animation */
+h1 {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 6s steps(100, end);
+    font-weight: bold;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+/* Media player */
+.media-container {
+    position: relative;
+    text-align: left;
+}
+
+.play-button {
+    position: absolute;
+    top: 10;
+    left: 0;
+    cursor: pointer;
+}
+
+.form-group {
+    max-width: 40%;
+    margin-left: 5%;
+}
+
+/* removing <a> tag attributes */
+a,
+a:hover,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+.table th {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+/*Home button */
+.indexHome{ 
+    padding-top: 1%;
+    padding-left: 1%;
+    font-weight: bold;
+}
+
+/* Text box on index.html, and links text box*/
+#aboutMe, #lol{ 
+    padding-top: 2%;
+    padding-left: 5%;
+}
+
+/* Experience Table */
+.table { 
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+
+}
+
+.table td {
+    text-align: center;
+}
+
+/* This adds padding under title */ 
+.title {
+    padding-bottom: 5%;
+}
+
+/* CURRENT INTERESTS */
+
+.imageBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
+.imageBox li {
+    height: 40vh;
+    flex-grow: 1;
+    list-style-type: none;
+}
+
+.imageBox img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+/* EDUCATION */
+.educationTable {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.educationTable th, td{
+    padding: 10px;
+}
+
+.degree {
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-top: 5%;
+}

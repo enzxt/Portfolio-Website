@@ -1,0 +1,70 @@
+<!--Enzo Tinard-->
+<!--CST-120 Bill Hughes-->
+<!--12/11/2023-->
+<!--This is my own work, all outside sources I used will be linked next to the code-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./JS/script.js"></script>
+
+    <style>
+      
+    </style>
+</head>
+
+<body>
+    <p class="indexHome"><a href="index.html">Home</a></p>
+    <div class="title" align="center">
+        <h1>
+            Experience
+        </h1>
+    </div>
+    <table class="table">
+        <tr>
+            <th>Adobe</th>
+            <th>Programming</th>
+            <th>Software</th>
+        </tr>
+        <tr>
+            <td>Premiere</td>
+            <td>Java</td>
+            <td>Mongo</td>
+        </tr>
+        <tr>
+            <td>Photoshop</td>
+            <td>C++</td>
+            <td>SQLWorkbench</td>
+        </tr>
+        <tr>
+            <td>After Effects</td>
+            <td>C#</td>
+            <td>Gimp</td>
+        </tr>
+    </table>
+    <div class="media-container">
+        <audio controls id="audioPlayer">
+            <source src="./media/media.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Added for hiding content on toggle -->
+        <div class="play-button" id="toggleButton">Media<span class="glyphicon glyphicon-paperclip"></span></div>
+    </div>
+
+    <script>
+        // jQuery script to toggle play button visibility
+        $(document).ready(function () {
+            $("#toggleButton").click(function () {
+                $("#audioPlayer").toggle();
+            });
+        });
+    </script>
+</body>
+
+</html>
